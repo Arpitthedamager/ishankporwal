@@ -12,7 +12,7 @@ const Navbar = () => {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'bumblebee' ? 'night' : 'bumblebee';
+    const newTheme = theme === 'bumblebee' ? 'bumblebee' : 'bumblebee';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
@@ -57,7 +57,7 @@ const Navbar = () => {
         <input
           type="checkbox"
           className="toggle toggle-success"
-          checked={theme === 'night'}
+          checked={theme === 'bumblebee'}
           onChange={toggleTheme}
         />
         <div className="dropdown dropdown-end">
