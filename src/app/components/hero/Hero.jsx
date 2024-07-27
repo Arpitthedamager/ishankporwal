@@ -49,8 +49,8 @@ export default function Hero() {
         </div>
         <div className="relative mt-32 mx-auto max-w-7xl">
           {/* Background Cards Positioned Directly Behind the hero1 Image */}
-          <div className="absolute -z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[-2deg] w-full h-full bg-orange-400 opacity-50 rounded-2xl"></div>
-          <div className="absolute -z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[2deg] w-full h-full bg-green-400 opacity-50 rounded-2xl"></div>
+          <div className="absolute -z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[-2deg] w-full h-full bg-orange-300 opacity-50 rounded-2xl"></div>
+          <div className="absolute -z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[2deg] w-full h-full bg-green-300 opacity-50 rounded-2xl"></div>
 
           <Image
             className="relative rounded-2xl mx-auto w-[calc(100%+6rem)] h-[calc(760px+6rem)] object-cover shadow-lg slide-in-from-bottom"

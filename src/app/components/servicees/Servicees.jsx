@@ -1,5 +1,6 @@
+"use client";
 import React from 'react';
-
+import { useEffect } from 'react';
 const services = [
   {
     href: "/services/sea-strategy",
@@ -32,25 +33,40 @@ const services = [
 ];
 
 const Servicees = () => {
+    useEffect(() => {
+        const bottomElements = document.querySelectorAll(".slide-in-from-bottom");
+    
+        bottomElements.forEach((element, index) => {
+          element.classList.remove('opacity-0', 'translate-y-full');
+          element.style.animation = `slideInFromBottom 1s ease-out ${0.5 + index * 0.2}s forwards`;
+        });
+      }, []);
   return (
-    <section className="services-section bg-gray-100 py-32">
+    <section className="services-section bg-gray-100 py-28">
       <div className="container mx-auto px-14">
         <div className="text-center mb-10">
-          <h2 className="text-5xl px-44 font-bold">Discover our marketing services to boost your business</h2>
+          <h2 className="text-5xl px-44 font-bold">
+            Discover our marketing services to boost your business
+          </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 slide-in-from-bottom">
           {services.map((service, index) => (
-            <a href={service.href} className="no-underline" key={index}>
-              <div className="service-card p-6 border rounded-2xl bg-white shadow-lg transition-shadow duration-300">
-                <img
-                  src={service.imgSrc}
-                  alt={service.imgAlt}
-                  className="w-20 h-20 mb-4"
-                />
-                <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
-                <p className='text-lg text-gray-500'>{service.description}</p>
-              </div>
-            </a>
+            <div className="relative group" key={index}>
+              {/* Orange background card */}
+              <div className="absolute inset-0 bg-green-200 rounded-2xl transform transition-transform duration-300 group-hover:scale-100 group-hover:rotate-[-3deg]"></div>
+              
+              <a href={service.href} className="no-underline relative z-10 block">
+                <div className="service-card p-6 border rounded-2xl bg-white shadow-lg">
+                  <img
+                    src={service.imgSrc}
+                    alt={service.imgAlt}
+                    className="w-20 h-20 mb-4"
+                  />
+                  <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+                  <p className='text-lg text-gray-500'>{service.description}</p>
+                </div>
+              </a>
+            </div>
           ))}
         </div>
       </div>

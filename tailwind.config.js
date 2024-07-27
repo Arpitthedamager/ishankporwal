@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'button-blue': '#8992fa',
         'button-hover-blue':'#616eff',
+        'bg-about1':'#d3d6ff',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
