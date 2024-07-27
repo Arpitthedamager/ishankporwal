@@ -5,14 +5,15 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/nevbar/Navbar';
 import LogosSection from './components/logos/Logos';
+import Servicees from './components/servicees/Servicees';
 
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Marketing Agency</title>
-        <meta name="description" content="Marketing Agency Template" />
+        <title>ADSuper</title>
+        <meta name="description" content="Marketing Agency " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -21,8 +22,8 @@ export default function Home() {
         <Hero />
         <LogosSection/>
         <About />
-        
-        <Contact />
+        <Servicees/>
+        <Contact/>
       </main>
       <Footer />
     </div>
