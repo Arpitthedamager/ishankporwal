@@ -8,7 +8,7 @@ const LogosSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-8 space-x-36">
           <h2 className="text-xl font-bold whitespace-nowrap">
-            Used by the world's most average companies
+            Used by the world&apos;s most average companies
           </h2>
           <div className="flex space-x-11">
             <div>

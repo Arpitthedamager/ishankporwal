@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "../button1/button1";
+import Image from "next/image";
 
 const Values = () => {
     const values = [
@@ -39,7 +40,7 @@ const Values = () => {
                             key={index}
                             className="bg-white p-10 pb-20 mr-24 rounded-2xl shadow-2xl transform transition-transform duration-300 hover:scale-105"
                         >
-                            <img
+                            <Image
                                 src={value.icon}
                                 alt={value.title}
                                 className="w-12 h-12 ml-0 mb-6 mx-auto"

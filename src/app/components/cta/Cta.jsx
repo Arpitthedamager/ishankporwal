@@ -11,7 +11,7 @@ const Cta = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="flex flex-col justify-center">
                 <h2 className="text-5xl font-semibold mb-4">
-                  Ready to shake up your company's marketing?
+                  Ready to shake up your company&apos;s marketing?
                 </h2>
                 <p className="text-xl mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

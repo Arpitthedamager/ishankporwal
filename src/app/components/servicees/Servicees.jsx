@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { useEffect } from 'react';
+import Image from 'next/image';
 const services = [
   {
     href: "/services/sea-strategy",
@@ -57,7 +58,7 @@ const Servicees = () => {
               
               <a href={service.href} className="no-underline relative z-10 block">
                 <div className="service-card p-6 border rounded-2xl bg-white shadow-lg">
-                  <img
+                  <Image
                     src={service.imgSrc}
                     alt={service.imgAlt}
                     className="w-20 h-20 mb-4"
