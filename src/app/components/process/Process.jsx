@@ -45,7 +45,7 @@ const Process = () => {
   const grayBarWidth = 100 - scrollProgress;
 
   return (
-    <section ref={componentRef} className="bg-gray-100 py-44 z-0 relative">
+    <section ref={componentRef} className="bg-gray-100 py-44 pb-16 z-0 relative">
       <div className="container mx-auto px-6 slide-in-from-bottom">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold">How we work with our customers</h2>

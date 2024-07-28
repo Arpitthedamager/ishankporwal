@@ -20,7 +20,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="pb-10">
+    <section id="about"  className="pb-10">
       <div className="px-10 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="space-y-10 slide-in-from-bottom opacity-0 -translate-y-full transition-transform duration-500">
@@ -32,7 +32,7 @@ export default function About() {
               Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
             </p>
             <div className="flex gap-8">
-              <Button href="https://www.webflow.com" variant="solid">
+              <Button href="" variant="solid">
                 Call us
               </Button>
               <Button href="/contact" variant="transparent">

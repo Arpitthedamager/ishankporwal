@@ -9,6 +9,7 @@ import About1 from './components/about1/About1';
 import Values from './components/values/Values';
 import Process from './components/process/Process';
 import Cta from './components/cta/Cta';
+import Blog from './components/blog/Blog';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Head>
         <title>ADSuper</title>
         <meta name="description" content="Marketing Agency " />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -29,6 +31,7 @@ export default function Home() {
         <About1/>
         <Values/>
         <Process/>
+        <Blog/>
         <Cta/>
       </main>
       <Footer />

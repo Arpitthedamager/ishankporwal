@@ -1,27 +1,11 @@
 // components/Navbar.js
 "use client";
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 const Navbar = () => {
-  const [theme, setTheme] = useState('bumblebee');
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'bumblebee';
-    setTheme(savedTheme);
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'bumblebee' ? 'bumblebee' : 'bumblebee';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-  };
-
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">ADSuper</a>
+        <a className="btn btn-ghost text-button-blue text-2xl ml-10">ADSuper</a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
@@ -32,19 +16,22 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
               </svg>
               <span className="badge badge-sm indicator-item">8</span>
             </div>
           </div>
           <div
             tabIndex={0}
-            className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+            className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+          >
             <div className="card-body">
               <span className="text-lg font-bold">8 Items</span>
               <span className="text-info">Subtotal: $999</span>
@@ -54,34 +41,41 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <input
-          type="checkbox"
-          className="toggle toggle-success"
-          checked={theme === 'bumblebee'}
-          onChange={toggleTheme}
-        />
+        
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle avatar"
+          >
             <div className="w-10 rounded-full">
               <Image
                 alt="Tailwind CSS Navbar component"
-                src="/favicon"
+                src="/favicon.ico"
                 width="100"
-                height={100} />
-                
+                height={100}
+              />
             </div>
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
             <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
+              <a href="/"className="justify-between">Home</a>
             </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
+            <li>
+              <a href="#about">About us</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

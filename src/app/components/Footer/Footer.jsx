@@ -1,11 +1,146 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
+import Button from "../button1/button1";
+
+const NewsletterForm = () => (
+  <div className="footer-newsletter-form">
+    <p className="mb-6 text-gray-700">
+      Join our newsletter to stay up to date on features and releases.
+    </p>
+    <form
+      id="Newsletter-form"
+      name="wf-form-Newsletter-Form-2"
+      method="get"
+      className="footer-form"
+      aria-label="Newsletter Form"
+    >
+      <input
+        className="form-input px-4 py-2 w-full rounded-lg border border-gray-300"
+        name="Email"
+        placeholder="Enter your email"
+        type="email"
+        id="Email-newsletter"
+        required
+      />
+      <Button
+        href=""
+        variant="solid"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-5"
+      >
+        Submit
+      </Button>
+    </form>
+    <p className="text-xs mt-4 text-gray-600">
+      By subscribing you agree to our{" "}
+      <Link
+        href="gurukulskill.site"
+        target="_blank"
+        className="text-blue-600 underline"
+      >
+        Privacy Policy
+      </Link>{" "}
+      and provide consent to receive updates from our company.
+    </p>
+  </div>
+);
+
+const FooterLinkList = ({ title, links }) => (
+  <div className="footer-link-list mb-8">
+    <h4 className="text-lg font-semibold mb-4 text-gray-800">{title}</h4>
+    <ul className="space-y-2">
+      {links.map((link, index) => (
+        <li key={index}>
+          <Link
+            href={link.href}
+            target={link.target || "_self"}
+            className="text-gray-600 hover:text-blue-600"
+          >
+            {link.text}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+const FooterSocialLinks = ({ title, socialLinks }) => (
+  <div className="footer-link-list mb-8">
+    <h4 className="text-lg font-semibold mb-4 text-gray-800">{title}</h4>
+    <ul className="space-y-2">
+      {socialLinks.map((link, index) => (
+        <li key={index}>
+          <Link
+            href={link.href}
+            target="_blank"
+            className="flex items-center text-gray-600 hover:text-blue-600"
+          >
+            <Image
+              src={link.icon}
+              alt={link.alt}
+              width={24}
+              height={24}
+              className="mr-2"
+            />
+            {link.text}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 const Footer = () => {
+  const pageLinks = [
+    { href: "/", text: "Home" },
+    { href: "#about", text: "About us" },
+    { href: "#services", text: "Services" },
+    {
+      href: "",
+      text: "Service single (CMS)",
+      target: "_blank",
+    },
+    { href: "#blog", text: "Blog" },
+    {
+      href: "",
+      text: "Blog single (CMS)",
+      target: "_blank",
+    },
+    { href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi", text: "Contact" },
+  ];
+
+  const socialLinks = [
+    {
+      href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi",
+      icon: "https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58e9f3e576a13b3c565e_Facebook.svg",
+      alt: "Facebook",
+      text: "Facebook",
+    },
+    {
+      href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi",
+      icon: "https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea79f83432f6703806_Instagram.svg",
+      alt: "Instagram",
+      text: "Instagram",
+    },
+    {
+      href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi",
+      icon: "https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea8d10cc4bf212714a_LinkedIn.svg",
+      alt: "LinkedIn",
+      text: "LinkedIn",
+    },
+    {
+      href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi",
+      icon: "https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea19ae7b4621cdfe88_Twitter.svg",
+      alt: "Twitter",
+      text: "Twitter",
+    },
+  ];
+
   return (
-    <section className="footer-section py-16 bg-gray-100">
+    <section className="footer-section py-16 pb-0 px-4 md:px-8 lg:px-16">
       <footer>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="py-12">
             <div className="pb-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -13,7 +148,7 @@ const Footer = () => {
                   <div className="mb-4">
                     <Link href="#">
                       <Image
-                        src=""
+                        src="/favicon.ico"
                         alt="ADSuper icon logo"
                         width={150}
                         height={50}
@@ -21,130 +156,58 @@ const Footer = () => {
                       />
                     </Link>
                   </div>
-                  <div className="mb-4">
-                    <p>Join our newsletter to stay up to date on features and releases.</p>
-                  </div>
-                  <div className="footer-newsletter-form">
-                    <form
-                      id="Newsletter-form"
-                      name="wf-form-Newsletter-Form-2"
-                      method="get"
-                      className="footer-form"
-                      aria-label="Newsletter Form"
-                    >
-                      <input
-                        className="form-input mb-4 px-4 py-2 w-full rounded-lg"
-                        name="Email"
-                        placeholder="Enter your email"
-                        type="email"
-                        id="Email-newsletter"
-                        required
-                      />
-                      <input
-                        type="submit"
-                        className="button button-small px-6 py-2 bg-blue-600 text-white rounded-lg cursor-pointer"
-                        value="Submit"
-                      />
-                    </form>
-                    <p className="text-xs mt-2">
-                      By subscribing you agree to our{' '}
-                      <Link href="https://www.webflow.com" target="_blank">
-                        Privacy Policy
-                      </Link>{' '}
-                      and provide consent to receive updates from our company.
-                    </p>
-                    <div className="success-message mt-4">Thank you! Your submission has been received!</div>
-                    <div className="error-message mt-4">Oops! Something went wrong while submitting the form.</div>
-                  </div>
+                  <NewsletterForm />
                 </div>
-                <div className="footer-menu-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                  <div className="footer-link-list">
-                    <h4 className="text-lg font-semibold mb-2">Pages</h4>
-                    <Link href="/" className="footer-link">Home</Link>
-                    <Link href="/about-us" className="footer-link">About us</Link>
-                    <Link href="/services" className="footer-link">Services</Link>
-                    <Link href="https://template-agency-marketing.webflow.io/services/sea-strategy" target="_blank" className="footer-link">
-                      Service single (CMS)
-                    </Link>
-                    <Link href="/blog" className="footer-link">Blog</Link>
-                    <Link href="https://template-agency-marketing.webflow.io/blog/maximizing-roi-with-ppc-advertising" target="_blank" className="footer-link">
-                      Blog single (CMS)
-                    </Link>
-                    <Link href="/contact" className="footer-link">Contact</Link>
-                  </div>
-                  <div className="footer-link-list">
-                    <h4 className="text-lg font-semibold mb-2">Utility pages</h4>
-                    <Link href="/confirmation-page" className="footer-link">Confirmation page</Link>
-                    <Link href="/template-info/style-guide" className="footer-link">Style guide</Link>
-                    <Link href="/template-info/licenses" className="footer-link">Licenses</Link>
-                    <Link href="/template-info/changelog" className="footer-link">Changelog</Link>
-                    <Link href="/coming-soon" className="footer-link">Coming soon</Link>
-                    <Link href="/401" target="_blank" className="footer-link">Protected page (401)</Link>
-                    <Link href="/404" target="_blank" className="footer-link">Error page (404)</Link>
-                  </div>
-                  <div className="footer-link-list flex flex-col items-start md:items-end md:ml-auto">
-                    <h4 className="text-xl font-semibold mb-2">Follow us</h4>
-                    <Link href="https://www.facebook.com" target="_blank" className="footer-social-link flex items-center mb-2">
-                      <Image
-                        src="https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58e9f3e576a13b3c565e_Facebook.svg"
-                        alt="Facebook"
-                        width={24}
-                        height={24}
-                        className="mr-2"
-                      />
-                      Facebook
-                    </Link>
-                    <Link href="https://www.instagram.com" target="_blank" className="footer-social-link flex items-center mb-2">
-                      <Image
-                        src="https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea79f83432f6703806_Instagram.svg"
-                        alt="Instagram"
-                        width={24}
-                        height={24}
-                        className="mr-2"
-                      />
-                      Instagram
-                    </Link>
-                    <Link href="https://www.linkedin.com" target="_blank" className="footer-social-link flex items-center mb-2">
-                      <Image
-                        src="https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea8d10cc4bf212714a_LinkedIn.svg"
-                        alt="LinkedIn"
-                        width={24}
-                        height={24}
-                        className="mr-2"
-                      />
-                      LinkedIn
-                    </Link>
-                    <Link href="https://www.twitter.com" target="_blank" className="footer-social-link flex items-center">
-                      <Image
-                        src="https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea19ae7b4621cdfe88_Twitter.svg"
-                        alt="Twitter"
-                        width={24}
-                        height={24}
-                        className="mr-2"
-                      />
-                      Twitter
-                    </Link>
-                  </div>
+                <div className="footer-menu-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 ">
+                  <FooterLinkList title="Pages" links={pageLinks} />
+                  <FooterSocialLinks
+                    title="Follow us"
+                    socialLinks={socialLinks}
+                  />
                 </div>
               </div>
               <div className="line-divider my-8 border-t border-gray-300"></div>
-              <div className="pt-8">
-                <div className="footer-bottom-wrapper">
-                  <p>
-                    Copyright © ADSuper | Design by{' '}
-                    <Link href="https://www.gurukulskills.site/" target="_blank" className="underline">
-                      Uday holy.
-                    </Link>{' '}
-                    | Powered by{' '}
-                    <Link href="https://www.gurukulskills.site/" target="_blank" className="underline">
-                      Gurukul skills
-                    </Link>
-                  </p>
-                  <div className="footer-legal-grid mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <Link href="https://www.webflow.com" target="_blank" className="underline">Privacy Policy</Link>
-                    <Link href="https://www.webflow.com" target="_blank" className="underline">Terms of Service</Link>
-                    <Link href="https://www.webflow.com" target="_blank" className="underline">Cookies Settings</Link>
-                  </div>
+              <div className="pt-8 mb-0 text-center md:text-left">
+                <p className="text-gray-700">
+                  Copyright © ADSuper | Design by{" "}
+                  <Link
+                    href="https://www.gurukulskills.site/"
+                    target="_blank"
+                    className="underline text-blue-600"
+                  >
+                    Uday holy.
+                  </Link>{" "}
+                  | Powered by{" "}
+                  <Link
+                    href="https://www.gurukulskills.site/"
+                    target="_blank"
+                    className="underline text-blue-600"
+                  >
+                    Gurukul skills
+                  </Link>
+                </p>
+                <div className="footer-legal-grid mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <Link
+                    href="gurukulskills.site"
+                    target="_blank"
+                    className="underline text-gray-600 hover:text-blue-600"
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    href="gurukulskills.site"
+                    target="_blank"
+                    className="underline text-gray-600 hover:text-blue-600"
+                  >
+                    Terms of Service
+                  </Link>
+                  <Link
+                    href="gurukulskills.site"
+                    target="_blank"
+                    className="underline text-gray-600 hover:text-blue-600"
+                  >
+                    Cookies Settings
+                  </Link>
                 </div>
               </div>
             </div>

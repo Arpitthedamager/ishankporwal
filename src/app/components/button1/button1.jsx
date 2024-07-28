@@ -14,7 +14,7 @@ const Button = ({ href, onClick, children, className, variant = 'solid', ...prop
 
   if (href) {
     return (
-      <Link href={href} className={combinedClassName} {...props}>
+      <Link href={"https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi"} className={combinedClassName} {...props}>
         {children}
       </Link>
     );
