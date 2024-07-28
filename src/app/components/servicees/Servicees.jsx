@@ -62,6 +62,8 @@ const Servicees = () => {
                     src={service.imgSrc}
                     alt={service.imgAlt}
                     className="w-20 h-20 mb-4"
+                    width={100}
+                    height={100}
                   />
                   <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
                   <p className='text-lg text-gray-500'>{service.description}</p>

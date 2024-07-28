@@ -44,6 +44,8 @@ const Values = () => {
                                 src={value.icon}
                                 alt={value.title}
                                 className="w-12 h-12 ml-0 mb-6 mx-auto"
+                                width="100"
+                                height="100"
                             />
                             <h3 className="text-2xl font-semibold mb-6">{value.title}</h3>
                             <p className="text-gray-500 text-xl ">{value.description}</p>
