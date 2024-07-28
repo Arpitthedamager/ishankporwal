@@ -12,7 +12,7 @@ const Blog = () => {
               <h2 className="text-6xl font-bold">The latest news and tips for optimal marketing</h2>
             </div>
             <div className="lg:mb-20">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 slide-in-from-bottom">
                 <BlogCard 
                   href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi" 
                   imgSrc="/hero1.jpeg" 
@@ -58,7 +58,7 @@ const Blog = () => {
 };
 
 const BlogCard = ({ href, imgSrc, imgAlt, category, title, description, author, date }) => (
-  <div className="shadow-md rounded-2xl bg-gray-100 overflow-hidden transform transition duration-300 hover:scale-105 slide-in-from-bottom">
+  <div className="shadow-md rounded-2xl bg-gray-100 overflow-hidden transform transition duration-300 hover:scale-105 ">
     <Link href={href} className="block no-underline">
       <div className="relative pb-2/3">
         <Image 
