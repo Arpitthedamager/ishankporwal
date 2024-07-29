@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "ADSuper - Marketing Agency",
   description: "ADSuper is a leading marketing agency specializing in innovative strategies to boost your brand's presence and engagement.",
-  keywords: "marketing, agency, digital marketing, SEO, brand strategy, social media marketing",
+  keywords: "marketing,ADSuper,adsuper, agency, digital marketing, SEO, brand strategy, social media marketing",
   author: "ADSuper Team",
   openGraph: {
     title: "ADSuper - Marketing Agency",

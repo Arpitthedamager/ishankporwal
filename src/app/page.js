@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>ADSuper - Marketing Agency</title>
         <meta name="description" content="ADSuper offers cutting-edge marketing solutions to elevate your brand's visibility and engagement." />
-        <meta name="keywords" content="marketing, digital marketing, SEO, branding, social media, advertising" />
+        <meta name="keywords" content="marketing, digital marketing, SEO, branding, social media, advertising,ADSuper,adsuper" />
         <meta name="author" content="ADSuper Team" />
         <meta property="og:title" content="ADSuper - Marketing Agency" />
         <meta property="og:description" content="ADSuper offers cutting-edge marketing solutions to elevate your brand's visibility and engagement." />
