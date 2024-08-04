@@ -5,7 +5,7 @@ import Button from "../button1/button1";
 const NewsletterForm = () => (
   <div className="footer-newsletter-form">
     <p className="mb-6 text-gray-700">
-      Join our newsletter to stay up to date on features and releases.
+      Join our newsletter to stay up to date on Incoming Offers and Updates.
     </p>
     <form
       id="Newsletter-form"
@@ -41,7 +41,7 @@ const NewsletterForm = () => (
       >
         Privacy Policy
       </Link>{" "}
-      and provide consent to receive updates from our company.
+      and provide consent to receive updates from our Agency.
     </p>
   </div>
 );
@@ -112,13 +112,13 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi",
+      href: "https://www.facebook.com/profile.php?id=100085817173988&mibextid=ZbWKwL",
       icon: "https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58e9f3e576a13b3c565e_Facebook.svg",
       alt: "Facebook",
       text: "Facebook",
     },
     {
-      href: "https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi",
+      href: "https://www.instagram.com/mr.nikhil01official?utm_source=qr&igsh=bnE5bnc5b3E0NGkz",
       icon: "https://assets.website-files.com/64ed83f6f321b779519b4817/64fc58ea79f83432f6703806_Instagram.svg",
       alt: "Instagram",
       text: "Instagram",
