@@ -2,7 +2,7 @@ export default function Contact() {
     return (
       <section id="contact" className="my-8">
         <h3 className="text-3xl font-semibold">Contact Us</h3>
-        <p className="mt-4">Get in touch to start your project.</p>
+        <p className="mt-4">Get in touch to start Ads Services and Web Development Services.</p>
         <form className="mt-4">
           <input className="p-2 border rounded mb-2 w-full" type="text" placeholder="Name" />
           <input className="p-2 border rounded mb-2 w-full" type="email" placeholder="Email" />
