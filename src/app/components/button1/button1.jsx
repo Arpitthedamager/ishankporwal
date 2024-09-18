@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 const Button = ({ href, onClick, children, className, variant = 'solid', ...props }) => {
-  const baseStyle = 'mt-14 px-16 py-6 font-semibold rounded-lg shadow-md transition-transform duration-300';
+  const baseStyle = 'mt-14 px-4 md:px-8 lg:px-16 py-4 md:py-5 font-semibold rounded-lg shadow-md transition-transform duration-300 min-w-[120px]';
 
   const variantStyles = {
     solid: 'bg-button-blue text-white hover:bg-button-hover-blue',
@@ -14,7 +14,7 @@ const Button = ({ href, onClick, children, className, variant = 'solid', ...prop
 
   if (href) {
     return (
-      <Link href={"https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi"} className={combinedClassName} {...props}>
+      <Link href={href} className={combinedClassName} {...props}>
         {children}
       </Link>
     );
