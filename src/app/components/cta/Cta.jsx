@@ -22,14 +22,14 @@ const Cta = () => {
               <div className="flex flex-col md:pt-10 pt-0">
                 <div className="flex gap-4">
                   <Button
-                    href="https://www.webflow.com"
+                    href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi"
                     variant="solid"
                     target="_blank"
                   >
                     Call us
                   </Button>
                   <Button
-                    href="/contact"
+                    href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi"
                     variant="transparent"
                     className="border border-black hover:bg-transparent hover:text-black"
                   >

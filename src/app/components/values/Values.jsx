@@ -28,10 +28,10 @@ const Values = () => {
         </div>
         <div className="flex px-16 space-x-4 mb-8">
           {" "}
-          <Button href="/services" variant="solid">
+          <Button href="#services" variant="solid">
             Services
           </Button>
-          <Button href="/contact" variant="transparent">
+          <Button href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi" variant="transparent">
             Contact
           </Button>
         </div>

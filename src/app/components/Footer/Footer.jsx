@@ -35,7 +35,7 @@ const NewsletterForm = () => (
     <p className="text-xs mt-4 text-gray-600">
       By subscribing you agree to our{" "}
       <Link
-        href="gurukulskill.site"
+        href="https://www.gurukulskills.site/"
         target="_blank"
         className="text-blue-600 underline"
       >
@@ -97,13 +97,13 @@ const Footer = () => {
     { href: "#about", text: "About us" },
     { href: "#services", text: "Services" },
     {
-      href: "",
+      href: "https://www.gurukulskills.site/",
       text: "Service single (CMS)",
       target: "_blank",
     },
     { href: "#blog", text: "Blog" },
     {
-      href: "",
+      href: "https://www.gurukulskills.site/",
       text: "Blog single (CMS)",
       target: "_blank",
     },
@@ -188,21 +188,21 @@ const Footer = () => {
                 </p>
                 <div className="footer-legal-grid mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <Link
-                    href="gurukulskills.site"
+                    href="https://www.gurukulskills.site/"
                     target="_blank"
                     className="underline text-gray-600 hover:text-blue-600"
                   >
                     Privacy Policy
                   </Link>
                   <Link
-                    href="gurukulskills.site"
+                    href="https://www.gurukulskills.site/"
                     target="_blank"
                     className="underline text-gray-600 hover:text-blue-600"
                   >
                     Terms of Service
                   </Link>
                   <Link
-                    href="gurukulskills.site"
+                    href="https://www.gurukulskills.site/"
                     target="_blank"
                     className="underline text-gray-600 hover:text-blue-600"
                   >

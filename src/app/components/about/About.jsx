@@ -44,10 +44,10 @@ export default function About() {
               commodo diam libero vitae erat.
             </p>
             <div className="flex gap-8 ">
-              <Button href="" variant="solid">
+              <Button href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi" variant="solid">
                 Call us
               </Button>
-              <Button href="/contact" variant="transparent">
+              <Button href="https://chat.whatsapp.com/KuIyij5t0Bg4rA2AHHRTZi" variant="transparent">
                 Write us
               </Button>
             </div>
