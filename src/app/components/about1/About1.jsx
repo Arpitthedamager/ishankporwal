@@ -19,13 +19,16 @@ const About1 = () => {
             />
           </div>
           <div className="slide-in-from-top">
-            <h2 className="text-4xl font-bold mb-6">Our expertise and experience</h2>
+            <h2 className="text-4xl font-bold mb-6">
+              Our expertise and experience
+            </h2>
             <p className="text-gray-500 text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              With years of experience in the digital marketing industry,
+              ADSuper has honed its expertise in crafting strategies that
+              deliver real results. We’ve completed over 150 successful
+              projects, driven by our team of more than 30 dedicated experts.
+              Our mission is to provide tailored solutions that help businesses
+              grow and thrive in a competitive marketplace.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               <div className="flex flex-col border-r border-black pr-6">

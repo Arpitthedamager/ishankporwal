@@ -12,7 +12,9 @@ export default function Hero() {
     leftElement.style.animation = "slideInFromLeft 1s ease-out forwards";
     rightElement.style.animation = "slideInFromRight 1s ease-out forwards";
     bottomElements.forEach((element, index) => {
-      element.style.animation = `slideInFromBottom 1s ease-out ${0.5 + index * 0.2}s forwards`;
+      element.style.animation = `slideInFromBottom 1s ease-out ${
+        0.5 + index * 0.2
+      }s forwards`;
     });
   }, []);
 
@@ -37,10 +39,10 @@ export default function Hero() {
               We create innovative marketing strategies for unique brands
             </h1>
             <p className="text-xl text-gray-700 mb-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
+              At ADSuper, we partner with forward-thinking brands to develop
+              unique and impactful marketing strategies. Our approach is
+              data-driven and tailored to help you stand out in a competitive
+              landscape, delivering results that fuel your business growth.
             </p>
             <Button href="#About-Section" variant="solid">
               Discover
