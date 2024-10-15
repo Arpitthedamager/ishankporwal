@@ -69,8 +69,7 @@ export default function Hero() {
           <Image
             src="/hero3.svg"
             alt="Marketing Webflow Marketing Agency Template - graphic assets hero"
-            layout="fill"
-            objectFit="contain"
+            fill
             priority
           />
         </div>

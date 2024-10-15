@@ -12,7 +12,6 @@ const About1 = () => {
             <Image
               src="/about1.jpeg"
               alt="Marketinx Webflow Marketing Agency Template - meeting"
-              layout="responsive"
               width={1280}
               height={720}
               className="object-cover z-10 relative rounded-2xl slide-in-from-bottom"
