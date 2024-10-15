@@ -45,7 +45,10 @@ const Process = () => {
   const grayBarWidth = 100 - scrollProgress;
 
   return (
-    <section ref={componentRef} className="bg-gray-100 py-44 pb-16 z-0 relative">
+    <section
+      ref={componentRef}
+      className="bg-gray-100 py-44 pb-16 z-0 relative"
+    >
       <div className="container mx-auto px-6 slide-in-from-bottom">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold">How we work with our customers</h2>
@@ -63,8 +66,8 @@ const Process = () => {
               </div>
               <h3 className="text-2xl font-semibold">Marketing audit</h3>
               <p className="text-xl text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
+                We begin with a comprehensive audit of your current marketing
+                strategies, identifying strengths and areas for improvement.
               </p>
             </div>
             <div className="flex flex-col z-10 items-center text-center">
@@ -78,8 +81,8 @@ const Process = () => {
               </div>
               <h3 className="text-2xl font-semibold">Action plan</h3>
               <p className="text-xl text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
+                Based on the audit, we create a detailed action plan tailored to
+                your business needs and objectives.
               </p>
             </div>
             <div className="flex flex-col items-center z-10 text-center">
@@ -93,8 +96,8 @@ const Process = () => {
               </div>
               <h3 className="text-2xl font-semibold">Implementation</h3>
               <p className="text-xl text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
+                We execute the plan with precision, ensuring each step is
+                measured and optimized for success.
               </p>
             </div>
           </div>

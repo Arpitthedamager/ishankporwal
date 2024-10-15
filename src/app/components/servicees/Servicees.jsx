@@ -8,7 +8,7 @@ const services = [
     imgSrc: "https://assets.website-files.com/64f0650d45e1c6882b035eae/64fc23f78f4d3af0f3521391_Marketinx%20Webflow%20Agency%20Template%20-%20icon%20ads.svg",
     imgAlt: "SEA strategy icon",
     title: "SEA strategy",
-    description: "Strategic SEA campaigns for instant visibility.",
+    description: "Strategic SEA campaigns for instant visibility on internet.",
   },
   {
     href: "/services/seo-strategy",

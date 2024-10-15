@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect } from "react";
-import Button from "../button1/button1";  
+import Button from "../button1/button1";
 
 export default function About() {
   useEffect(() => {
@@ -9,29 +9,41 @@ export default function About() {
     const topElements = document.querySelectorAll(".slide-in-from-top");
 
     topElements.forEach((element, index) => {
-      element.classList.remove('opacity-0', '-translate-y-full');
-      element.style.animation = `slideInFromTop 1s ease-out ${0.5 + index * 0.2}s forwards`;
+      element.classList.remove("opacity-0", "-translate-y-full");
+      element.style.animation = `slideInFromTop 1s ease-out ${
+        0.5 + index * 0.2
+      }s forwards`;
     });
 
     bottomElements.forEach((element, index) => {
-      element.classList.remove('opacity-0', 'translate-y-full');
-      element.style.animation = `slideInFromBottom 1s ease-out ${0.5 + index * 0.2}s forwards`;
+      element.classList.remove("opacity-0", "translate-y-full");
+      element.style.animation = `slideInFromBottom 1s ease-out ${
+        0.5 + index * 0.2
+      }s forwards`;
     });
   }, []);
 
   return (
-    <section id="about"  className="pb-10">
+    <section id="about" className="pb-10">
       <div className="px-10 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="space-y-10 slide-in-from-bottom opacity-0 -translate-y-full transition-transform duration-500">
-            <h2 className="text-5xl font-bold">Catalyzing your success: our marketing magic</h2>
+            <h2 className="text-5xl font-bold">
+              Catalyzing your success: our marketing magic
+            </h2>
             <p className="text-xg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+              At ADSuper, we empower brands through innovative marketing
+              strategies that drive results. Our team of experts is dedicated to
+              crafting solutions that fit your unique business needs. Whether
+              it's SEO, branding, or digital campaigns, we provide the tools for
+              your brand to stand out and grow. Let’s work together to turn your
+              vision into reality.
               <br />
               <br />
-              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+              commodo diam libero vitae erat.
             </p>
-            <div className="flex gap-8">
+            <div className="flex gap-8 ">
               <Button href="" variant="solid">
                 Call us
               </Button>

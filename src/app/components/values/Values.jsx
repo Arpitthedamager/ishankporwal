@@ -5,10 +5,10 @@ import Image from "next/image";
 const Values = () => {
   const values = [
     {
-      title: "Results-Driven Excellence",
+      title: "Innovative Solutions",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-      icon: "/path-to-icons/icon-quality.svg",
+        "At ADSuper, we believe in staying ahead of the curve. We leverage the latest trends and technologies to provide cutting-edge marketing solutions that set your brand apart from the competition.",
+      icon: "/path-to-icons/icon-innovation.svg",
     },
   ];
 
@@ -20,10 +20,10 @@ const Values = () => {
             Why work with us?
           </h2>
           <p className="text-lg md:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
+            At ADSuper, we combine innovative strategies with a customer-first
+            approach to help brands achieve sustainable growth. With years of
+            experience, our team of experts is dedicated to elevating your
+            business to new heights.
           </p>
         </div>
         <div className="flex px-16 space-x-4 mb-8">
