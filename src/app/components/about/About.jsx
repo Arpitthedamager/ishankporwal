@@ -35,7 +35,7 @@ export default function About() {
               At ADSuper, we empower brands through innovative marketing
               strategies that drive results. Our team of experts is dedicated to
               crafting solutions that fit your unique business needs. Whether
-              it's SEO, branding, or digital campaigns, we provide the tools for
+              it&apos;s SEO, branding, or digital campaigns, we provide the tools for
               your brand to stand out and grow. Let&apos;s work together to turn your
               vision into reality.
               <br />
