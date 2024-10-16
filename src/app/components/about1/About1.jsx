@@ -24,7 +24,7 @@ const About1 = () => {
             <p className="text-gray-500 text-xl">
               With years of experience in the digital marketing industry,
               ADSuper has honed its expertise in crafting strategies that
-              deliver real results. We’ve completed over 150 successful
+              deliver real results. We&apos;ve completed over 150 successful
               projects, driven by our team of more than 30 dedicated experts.
               Our mission is to provide tailored solutions that help businesses
               grow and thrive in a competitive marketplace.

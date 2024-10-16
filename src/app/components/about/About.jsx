@@ -36,7 +36,7 @@ export default function About() {
               strategies that drive results. Our team of experts is dedicated to
               crafting solutions that fit your unique business needs. Whether
               it's SEO, branding, or digital campaigns, we provide the tools for
-              your brand to stand out and grow. Let’s work together to turn your
+              your brand to stand out and grow. Let&apos;s work together to turn your
               vision into reality.
               <br />
               <br />
